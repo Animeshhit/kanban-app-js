@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.heading-font {
+  font-family: "Inter", sans-serif;
+}
+
+.para-font {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #001c30;
+}
+
+/* /* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4d5159;
+  border-radius: 24px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4b5563;
+}
+
+.popupbox {
+  width: 30rem;
+  max-width: 500px;
+  background: #001c30;
+  border-radius: 10px;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+}
+
+.input_box {
+  margin-block: 1rem;
+}
+
+label {
+  text-transform: capitalize;
+}
+.popup_wrapper {
+  transform: scale(0);
+  transition: transform 0.4s ease;
+}
+
+.show {
+  transform: scale(1);
+}
+
+.active {
+  background-color: #64ccc5;
+  color: black;
+}
+
+.w-9ty {
+  width: 90%;
+}
